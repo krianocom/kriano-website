@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Kriano — Let's Talk</title>
+  <meta name="description" content="Get in touch with Neal Aggarwal at Kriano. No obligation, no sales pitch — just a straightforward conversation about your risk and controls challenge.">
+  <link rel="canonical" href="https://www.kriano.com/contact.html">
+
+  <meta property="og:title"       content="Contact | Kriano">
+  <meta property="og:description" content="Get in touch with Neal Aggarwal. No obligation, no sales pitch.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://www.kriano.com/contact.html">
+  <meta property="og:image"       content="https://www.kriano.com/kriano-social-share.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Kriano — home">
+        <img src="kriano-logo-primary.png" alt="Kriano">
+      </a>
+      <button class="nav__toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="index.html"        class="nav__link">Home</a></li>
+        <li><a href="about.html"        class="nav__link">About Kriano</a></li>
+        <li><a href="services.html"     class="nav__link">Our Services</a></li>
+        <li><a href="case-studies.html" class="nav__link">Case Studies</a></li>
+        <li><a href="contact.html"      class="nav__link nav__link--active nav__link--cta">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header" aria-labelledby="page-title">
+    <div class="page-header__inner">
+      <p class="page-header__label">Contact</p>
+      <h1 class="page-header__heading" id="page-title">Let's talk.</h1>
+      <div class="page-header__rule" aria-hidden="true"></div>
+      <p class="page-header__sub">No obligation, no sales pitch — just a straightforward conversation.</p>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="section--light" aria-labelledby="contact-heading">
+    <div class="container">
+
+      <p class="section-intro" style="margin-bottom: 60px;">
+        Whether you have a specific project in mind or just want to explore whether Kriano can help, I'm always happy to have an initial conversation.
+      </p>
+
+      <div class="contact-layout">
+
+        <!-- FORM -->
+        <div>
+          <!-- Success message (shown after form submission) -->
+          <div id="form-success" class="form-success" role="alert">
+            <h2 class="form-success__heading">Message received.</h2>
+            <p class="form-success__body">Thank you for getting in touch. I'll be in contact shortly.</p>
+          </div>
+
+          <form
+            id="contact-form"
+            name="contact"
+            method="POST"
+            action="/contact.html?success=true"
+            data-netlify="true"
+            aria-labelledby="contact-heading"
+          >
+            <input type="hidden" name="form-name" value="contact">
+
+            <h2 id="contact-heading" class="section-heading" style="margin-bottom: 2rem;">Send a message</h2>
+
+            <div class="contact-form">
+
+              <div class="form-group">
+                <label class="form-label" for="name">Your name <span aria-label="required">*</span></label>
+                <input class="form-input" type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="company">Your company <span aria-label="required">*</span></label>
+                <input class="form-input" type="text" id="company" name="company" autocomplete="organization" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Email address <span aria-label="required">*</span></label>
+                <input class="form-input" type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">What are you looking for help with? <span aria-label="required">*</span></label>
+                <textarea class="form-textarea" id="message" name="message" required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="referral">How did you hear about Kriano? <span style="opacity:0.6;">(optional)</span></label>
+                <input class="form-input" type="text" id="referral" name="referral">
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn--gold">Send message</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <aside class="contact-info" aria-label="Contact details">
+          <p class="contact-info__heading">Direct contact</p>
+
+          <div class="contact-info__item">
+            <p class="contact-info__label">Email</p>
+            <p class="contact-info__value">
+              <a href="mailto:neal@kriano.com">neal@kriano.com</a>
+            </p>
+          </div>
+
+          <div class="contact-info__item">
+            <p class="contact-info__label">LinkedIn</p>
+            <p class="contact-info__value">
+              <a href="https://www.linkedin.com/in/neal-aggarwal" target="_blank" rel="noopener noreferrer">neal-aggarwal</a>
+            </p>
+          </div>
+
+          <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--cream-dark);">
+            <p style="font-size: 0.9rem; line-height: 1.75; opacity: 0.7; font-style: italic;">
+              I work with businesses across the UK and internationally where required.
+            </p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__wordmark">KRIANO</span>
+        <div class="footer__rule" aria-hidden="true"></div>
+        <span class="footer__strapline">Control &middot; Clarity &middot; Confidence</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer__nav">
+          <li><a href="index.html"        class="footer__nav-link">Home</a></li>
+          <li><a href="about.html"        class="footer__nav-link">About Kriano</a></li>
+          <li><a href="services.html"     class="footer__nav-link">Our Services</a></li>
+          <li><a href="case-studies.html" class="footer__nav-link">Case Studies</a></li>
+          <li><a href="contact.html"      class="footer__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <a href="mailto:neal@kriano.com"                    class="footer__contact-link">neal@kriano.com</a>
+        <a href="https://www.linkedin.com/in/neal-aggarwal" class="footer__contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <div class="footer__legal">
+        <p>Kriano Limited &middot; Registered in England &amp; Wales &middot; Company No. 17116968 &middot; 66 Paul Street, London, EC2A 4NA &middot; &copy; 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
