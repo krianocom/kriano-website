@@ -1126,8 +1126,9 @@ a {
   }
 
   .about-photo {
-    width: 140px;
-    margin: 0 0 1rem 1.5rem;
+    float: none;
+    width: 160px;
+    margin: 0 auto 1.5rem;
   }
 
   .value-prop {
